@@ -39,7 +39,7 @@ const SocialIcons = () => {
         </li>
         <li className="social-icons">
           <a
-            href="https://www.linkedin.com/in/adham-osman-662529233"
+            href="https://www.linkedin.com/in/adham-osman-/"
             target="_blank"
             rel="noreferrer"
             className="icon-colour  home-social-icons"
@@ -50,7 +50,7 @@ const SocialIcons = () => {
         </li>
         <li className="social-icons">
           <a
-            href="https://www.instagram.com/ao.27.o1/"
+            href="https://www.instagram.com/boatman_08/"
             target="_blank"
             rel="noreferrer"
             className="icon-colour home-social-icons"
