@@ -1,13 +1,14 @@
 import ProjectBackbone from "./ProjectBackbone";
 import fromOceanToPlate from "../../Assets/FromOceanToPlate.png";
-import MyTracker from "../../Assets/MyTracker.png";
-import MyTrackerv2 from "../../Assets/MyTrackerV2.png";
 import UnitConverter from "../../Assets/unit-converter.jpg";
 import BlogApp from "../../Assets/Blog.png";
 import FishWeight from "../../Assets/FishWeight.png";
-import FishAi from "../../Assets/fishaimodel.jpg";
 import Bolbol from "../../Assets/FlappyBolBol.png";
 import Pomodoro from "../../Assets/Pomodoro.png";
+import MyTrackerV3 from "../../Assets/MyTrackerV3.png";
+import Scheduleapp from "../../Assets/Scheduling-app.png";
+import ReactQuizApp from "../../Assets/ReactQuizzApp.png";
+import RandomShop from "../../Assets/RandomShop.png";
 
 const Projects = () => {
   return (
@@ -18,51 +19,111 @@ const Projects = () => {
       <p>Here are some of my recent projects.</p>
       <div className="backbone">
         <ProjectBackbone
+          ProjectTitle="Scheduling App"
+          ProjectImage={Scheduleapp}
+          ProjectAlt="Scheduling App"
+          ProjectDesc="The Scheduling App is a user-friendly appointment and meeting management solution developed using React and Node.js. It integrates with a PostgreSQL database for data integrity and robust security measures. Inspired by modern scheduling tools, it enhances productivity and organization for individuals and teams."
+          ProjectLink="https://github.com/boatman-27/scheduling-app"
+          ProjectTech={[
+            "React",
+            "Node.js",
+            "Express",
+            "PostgreSQL",
+            "Bcrypt",
+            "ReactRouter",
+            "ReactHookForm",
+            "ReactHookToast",
+            "FullCalendar",
+            "Add-to-Calendar Button",
+            "React Spinners",
+          ]}
+        />
+
+        <ProjectBackbone
+          ProjectTitle="My Tracker V3"
+          ProjectImage={MyTrackerV3}
+          ProjectAlt="My Tracker V3"
+          ProjectDesc="My Tracker V3 is a comprehensive web application developed using React, Node.js, and Express. It features job and task tracking functionalities with a PostgreSQL database for reliable data storage. This project was created to allow me to track job applications and daily tasks and todos. It allows the addition, editing, and deletion of job applications and tasks, as well as updating their statuses. The project also integrates React Query for data fetching and caching, ensuring a seamless and responsive experience."
+          ProjectLink="https://github.com/boatman-27/tracker-v3"
+          ProjectTech={[
+            "React",
+            "Node.js",
+            "Express",
+            "PostgreSQL",
+            "React Query",
+            "ReactHookForm",
+            "ReactRouter",
+          ]}
+        />
+
+        <ProjectBackbone
           ProjectTitle="Blog Web App"
           ProjectImage={BlogApp}
           ProjectAlt="Blog Web App"
-          ProjectDesc="Welcome to my Blog web application, meticulously crafted with React and Node.js. This dynamic platform not only provides users with a seamless registration and login experience but also invites them to immerse themselves in a vibrant community of passionate bloggers. At the core of our platform is a robust security system that ensures the confidentiality of user data. Utilizing a locally hosted PostgreSQL database, we guarantee the safe storage of login credentials, prioritizing the privacy and trust of our users. Once logged in, users gain access to a world of captivating blog posts, both from seasoned writers and new contributors. Our intuitive interface empowers users to effortlessly browse through an array of diverse content, and with just a few clicks, they can create and share their own compelling blog posts. One of the standout features of our platform is the ability to enhance blog posts with relevant tags. This not only allows users to categorize their content effectively but also facilitates an enriched and organized browsing experience for the entire community. The innovative tagging system enables users to seamlessly search for and discover blogs that align with their interests, fostering a sense of community engagement and connection."
+          ProjectDesc="My Blog is a web application created using React and Node.js, offering a user-friendly registration and login experience. It features a robust security system for user data confidentiality and a locally hosted PostgreSQL database for safe storage. Users can access a variety of blog posts from other users, and create and share their own content. The platform also allows users to add tags to their posts, enhancing the browsing experience and fostering community engagement. This tagging system allows users to easily discover blogs that align with their interests, fostering a sense of community connection."
           ProjectLink="https://github.com/boatman-27/Blog_app"
+          ProjectTech={[
+            "React",
+            "Node.js",
+            "Express",
+            "PostgreSQL",
+            "Bcrypt",
+            "ReactRouter",
+            "Axios",
+          ]}
         />
 
         <ProjectBackbone
-          ProjectTitle="My Tracker"
-          ProjectImage={MyTracker}
-          ProjectAlt="My Tracker"
-          ProjectDesc="My Tracker website seamlessly combines the power of Flask as its robust backend and React.js as its dynamic frontend, creating an intuitive and aesthetically pleasing platform for users to effortlessly track their daily activities. With three main pages—Jobs, Todo, and Expenses—the website offers a unique and streamlined experience. On the Jobs page, users can input and manage information about the jobs they've applied for, ensuring a comprehensive overview of their professional pursuits. The Todo page provides a dynamic task management system, allowing users to input tasks, mark them as completed, and efficiently organize their daily responsibilities. The Expenses page serves as a sophisticated expense tracker, enabling users to record both income and expenses seamlessly, with entries elegantly displayed in tables for a clear visual representation of financial activities. Leveraging the robust capabilities of Firebase as the database of choice."
-          ProjectLink="https://github.com/boatman-27/MyTracker"
+          ProjectTitle="Dynamic Quiz Application"
+          ProjectImage={ReactQuizApp}
+          ProjectAlt="Dynamic Quiz Application"
+          ProjectDesc="This project is a dynamic quiz application built using React, allowing users to engage in customizable quizzes with various options for question quantity, difficulty level, and question type. Inspired by the Quiz App website made in Jonas Schmedtmann's React course, this version integrates a form page that takes user input and communicates with the Open Trivia Database API based on the selected parameters, rather than relying on a JSON file for questions."
+          ProjectLink="https://github.com/boatman-27/Quiz_app"
+          ProjectTech={["React", "useContext", "JSON Server"]}
         />
 
         <ProjectBackbone
-          ProjectTitle="My Tracker V2"
-          ProjectImage={MyTrackerv2}
-          ProjectAlt="My Tracker V2"
-          ProjectDesc="Introducing the second iteration of My Tracker, now offering an enhanced user experience through the integration of React for the frontend and Express with Node.js for the backend. Seamlessly hosted on Vercel, My Tracker v2 retains all the features of its predecessor, My Tracker v1. The Todo page remains a dynamic task manager, facilitating effortless input, completion marking, and organisation of daily responsibilities. The Expenses page continues to function as a sophisticated financial tracker, displaying income and expense entries in clear tables. The Jobs page completes the trio, providing a comprehensive tool for managing professional pursuits. A new addition to My Tracker v2 is the Travel page, fulfilling a personal dream to explore the world. This page features a map where I can enter the name of the country I visited, and its colour changes on the map, marking it as visited. Under the hood, My Tracker v2 harnesses the power of Express and Node.js for the backend, enhancing performance and scalability. The migration to PostgreSQL as the chosen database ensures reliable and flexible data management tailored to each user's preferences."
-          ProjectLink="https://github.com/boatman-27/My_Tracker-v2"
+          ProjectTitle="E-Commerce Application"
+          ProjectImage={RandomShop}
+          ProjectAlt="E-Commerce Application"
+          ProjectDesc="This project is a dynamic e-commerce application built using React and Redux Toolkit, allowing users to engage in customizable shopping experiences with various product options. The application integrates user authentication, product management, cart functionality, and order processing. This project was built during Jonas Schmedtmann's React course, with additional features and improvements added."
+          ProjectLink="https://github.com/boatman-27/Random_Shop"
+          ProjectTech={["React", "ReactRouter", "Redux Toolkit", "React Redux"]}
         />
 
         <ProjectBackbone
           ProjectTitle="Unit Converter"
           ProjectImage={UnitConverter}
           ProjectAlt="Unit Converter"
-          ProjectDesc="Introducing the Unit Conversion Program, a versatile Python tool developed for seamless and accurate conversion across various unit categories. Built with a clean and modular code structure, this program leverages the power of the Pandas library for efficient handling of conversion factors. Covering a wide range of units, including area, data transfer rate, energy, frequency, fuel economy, length, mass, plane angle, pressure, speed, temperature, time, and volume, the program provides an intuitive user interface for selecting specific units and entering values. Special attention has been given to temperature conversion, offering dynamic calculations for Celsius, Fahrenheit, and Kelvin units. The program's use of Pandas ensures precise and reliable results, making it a valuable tool for students and professionals alike."
+          ProjectDesc="The Unit Conversion Program is a Python tool designed for accurate unit conversion across various categories. It uses the Pandas library for efficient conversion factors and offers an intuitive user interface for selecting units and entering values. The program is designed to handle temperature conversion, offering dynamic calculations for Celsius, Fahrenheit, and Kelvin units.This project was inspired by Google's online conversion tool."
           ProjectLink="https://github.com/boatman-27/Unit_Converter"
+          ProjectTech={["Python", "Pandas", "Tkinter"]}
         />
 
         <ProjectBackbone
           ProjectTitle="From Ocean to Plate"
           ProjectImage={fromOceanToPlate}
           ProjectAlt="From Ocean to Plate"
-          ProjectDesc="My Bachelor's thesis project involved the creation of a dynamic website using React.js for the frontend and the development of essential smart contracts using Solidity. This platform was designed for all participants in the seafood supply chain, like customers, fishermen, processing and distribution companies, and the system owner. Notably, the project encompassed the implementation of three critical smart contracts for managing transactions, licensing, and adding seafood items to the blockchain to be available for purchase by customers after being processed and distributed. Ganache was used to support the Blockchain functionality."
+          ProjectDesc="My Bachelor's thesis project involved the creation of a dynamic website using React for the frontend and the development of essential smart contracts using Solidity. This platform was designed for all participants in the seafood supply chain, like customers, fishermen, processing and distribution companies, and the system owner. Notably, the project encompassed the implementation of three critical smart contracts for managing transactions, licensing, and adding seafood items to the blockchain to be available for purchase by customers after being processed and distributed. Ganache was used to support the Blockchain functionality."
           ProjectLink="https://github.com/boatman-27/seafood-solidity-react"
+          ProjectTech={[
+            "Solidity",
+            "React",
+            "Ganache",
+            "Truffle",
+            "TailwindCSS",
+            "jspdf",
+            "qrcode.react",
+          ]}
         />
 
         <ProjectBackbone
           ProjectTitle="Pomodoro Timer"
           ProjectImage={Pomodoro}
           ProjectAlt="Pomodoro Timer"
-          ProjectDesc="The Pomodoro timer application is a tool designed to enhance time management and productivity. It uses the Pomodoro Technique, which breaks work into intervals separated by short breaks. Users can set customizable durations for work sessions, short and long breaks. The timer function allows users to start and reset the timer, and checkmarks indicate completed work intervals. The application also features a to-do list, allowing users to input tasks and manage them alongside the timer. Tasks can be added, checked off, and removed as needed. Tasks are stored in a text file to ensure tasks remain intact across different sessions. Built using Tkinter, the user-friendly interface is intuitive and easy to navigate."
+          ProjectDesc="The Pomodoro timer application is a tool for time management and productivity, using the Pomodoro Technique to break work into intervals with short breaks. Users can set durations, start and reset the timer, and check completed intervals. The app also features a to-do list, allowing users to input tasks and manage them, stored in a text file. The user interface is built using Tkinter."
           ProjectLink="https://github.com/boatman-27/Pomodoro"
+          ProjectTech={["Python", "Tkinter"]}
         />
 
         <ProjectBackbone
@@ -71,14 +132,7 @@ const Projects = () => {
           ProjectAlt="Fish Recognition and Weight Estimation"
           ProjectDesc="The Fish Species Detection and Weight Estimation project is a comprehensive Python-based solution that leverages the power of YOLOv8 for accurate fish species identification and subsequently estimates the weight of the detected fish. This project seamlessly integrates with a Django web application, providing users with an intuitive and user-friendly interface to interact with the system."
           ProjectLink="https://github.com/boatman-27/Fish_Recognition_and_weight"
-        />
-
-        <ProjectBackbone
-          ProjectTitle="FishSpecAI: Species Identification with Deep Learning"
-          ProjectImage={FishAi}
-          ProjectAlt="FishSpecAI: Species Identification with Deep Learning"
-          ProjectDesc="FishSpecAI is a deep learning project aimed at automating fish species identification. Using a dataset found on Kaggle, this Python-based endeavor comprises three key components. The first file is dedicated to training and generating the 'model.h5' file. The second file allows users to deploy the trained model, providing immediate species predictions when provided with an image. The third file offers valuable insights by presenting the percentage likelihood of the identified species."
-          ProjectLink="https://github.com/boatman-27/SpeciesGuesser"
+          ProjectTech={["Python", "OpenCV", "YOLOv8", "Django", "Flask"]}
         />
 
         <ProjectBackbone
@@ -87,6 +141,7 @@ const Projects = () => {
           ProjectAlt="Flappy Bolbol"
           ProjectDesc="Flappy BolBol is my personal adaptation of the classic Flappy Bird game, developed using the versatile Unity game engine. This whimsical and engaging game introduces players to a charming bird named BolBol, who takes on the challenging world of endless obstacles. The game mechanics are simple yet addictive: tap to make BolBol flap its wings and navigate through a maze of pipes."
           ProjectLink="https://github.com/boatman-27/flappy_bolbol"
+          ProjectTech={["Unity"]}
         />
       </div>
     </div>
